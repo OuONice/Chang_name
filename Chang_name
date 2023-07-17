@@ -1,0 +1,37 @@
+a = "d"
+b = "e"
+c = "f"
+d = "g"
+e = "h"
+f = "i"
+g = "j"
+h = "k"
+i = "l"
+j = "m"
+k = "n"
+l = "o"
+m = "p"
+n = "q"
+o = "r"
+p = "s"
+q = "t"
+r = "u"
+s = "v"
+t = "w"
+u = "x"
+v = "y"
+w = "z" 
+x = "a"
+y = "b"
+z = "c"
+
+friend_name = input("ชื่อเพื่อน: ")
+replaced_name = ""
+for char in friend_name:
+    if char.lower() in globals():
+        replaced_name += globals()[char.lower()]
+    else:
+        replaced_name += char
+
+print("ชื่อเพื่อนที่แทนที่คำด้วยตัวแปร:")
+print(replaced_name)
